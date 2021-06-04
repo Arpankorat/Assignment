@@ -11,5 +11,6 @@ export const  todos = () => (dispatch) => {
     axios.get('https://jsonplaceholder.typicode.com/todos')
     .then(res => res.json())
     .then(res => dispatch(getTodos(res)))
+    .then(res=> console.log(res))
     
     }
